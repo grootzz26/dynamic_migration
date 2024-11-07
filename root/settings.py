@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sample',
-    'temp'
+    'temp',
+    'security',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ WSGI_APPLICATION = 'root.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'guna',
+        'NAME': 'mydb',
         'USER': 'root',
         'PASSWORD': 'root@123',
         'HOST': 'localhost',

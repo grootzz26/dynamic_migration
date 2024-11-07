@@ -16,11 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from sample.views import create_model, fetch_data_from_dynamic_table, generate_migrations
+from sample.views import create_model, fetch_data_from_dynamic_table, generate_migrations, encrypted_response, decrpyt
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('create_table/', create_model),
     path("fetch_data/", fetch_data_from_dynamic_table),
-    path("generate_migrations/", generate_migrations)
+    path("generate_migrations/", generate_migrations),
+    path("encrypt/", encrypted_response),
+    path("decrypt/", decrpyt),
 ]
